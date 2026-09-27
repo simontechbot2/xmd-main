@@ -1,5 +1,7 @@
 module.exports = {
   name: 'ping',
-  description: 'Ping command',
-  execute: async (client, msg, args) => msg.reply && msg.reply('Pong')
+  description: 'Ping the bot',
+  execute: async (sock, message) => {
+    await sock.sendMessage(message.key.remoteJid, { text: 'Pong!' });
+  }
 };
