@@ -1,13 +1,17 @@
 {
   "name": "xmd-main",
-  "version": "1.0.0",
-  "description": "Spider WhatsApp bot scaffold",
+  "version": "1.1.0",
+  "description": "Spider WhatsApp bot built with Baileys and a command handler",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node index.js"
   },
   "author": "simon tech Inc",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.16",
+    "pino": "^9.7.0"
+  }
 }
